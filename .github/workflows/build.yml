@@ -15,7 +15,7 @@ jobs:
           xcodebuild build \
             -project todo.xcodeproj \
             -scheme todo \
-            -destination 'platform=iOS Simulator,name=iPhone 16' \
+            -destination 'platform=iOS Simulator,name=iPhone 17' \
             -skipPackagePluginValidation \
             CODE_SIGNING_ALLOWED=NO
 
@@ -24,6 +24,6 @@ jobs:
           xcodebuild test \
             -project todo.xcodeproj \
             -scheme todo \
-            -destination 'platform=iOS Simulator,name=iPhone 16' \
+            -destination 'platform=iOS Simulator,name=iPhone 17' \
             -skipPackagePluginValidation \
             CODE_SIGNING_ALLOWED=NO
