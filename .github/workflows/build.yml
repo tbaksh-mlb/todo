@@ -6,14 +6,9 @@ on:
 
 jobs:
   build:
-    runs-on: macos-15
+    runs-on: [self-hosted, macOS]
     steps:
       - uses: actions/checkout@v4
-
-      - name: Set up Xcode
-        uses: maxim-lobanov/setup-xcode@v1
-        with:
-          xcode-version: latest-stable
 
       - name: Build
         run: |
